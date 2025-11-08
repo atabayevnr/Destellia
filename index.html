@@ -6,27 +6,58 @@
   <title>Destellia</title>
   <style>
     body {
-      font-family: sans-serif;
-      background-color: #f3f3f3;
-      text-align: center;
       margin: 0;
-      padding: 40px;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #141e30, #243b55);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
     }
-    video {
-      width: 80%;
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.2em;
+    }
+
+    p {
+      font-size: 1.2em;
       max-width: 600px;
-      margin-top: 20px;
-      border-radius: 12px;
+    }
+
+    .btn {
+      margin-top: 30px;
+      padding: 12px 25px;
+      background: #ff9800;
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      font-size: 1em;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #ffa733;
+      transform: scale(1.05);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 15px;
+      font-size: 0.8em;
+      opacity: 0.7;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to Destellia</h1>
-  <p>This is my simple one-page website.</p>
-
-  <video controls>
-    <source src="video.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
+  <h1>Welcome to <span style="color:#ff9800;">Destellia</span></h1>
+  <p>Your digital space of creativity, freedom, and innovation.</p>
+  <a href="#" class="btn">Explore</a>
+  <footer>© 2025 Destellia. All rights reserved.</footer>
 </body>
 </html>
+
