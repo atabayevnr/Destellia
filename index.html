@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,56 +8,112 @@
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #141e30, #243b55);
-      color: #fff;
+      background: linear-gradient(180deg, #fbe9e7, #ffe0e0);
+      color: #5b3a29;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    header {
       text-align: center;
+      padding: 80px 20px 40px;
     }
 
-    h1 {
+    header h1 {
       font-size: 3em;
-      margin-bottom: 0.2em;
+      color: #8b5e3c;
+      margin-bottom: 10px;
     }
 
-    p {
+    header p {
+      color: #a8745b;
       font-size: 1.2em;
       max-width: 600px;
+      margin: 0 auto;
     }
 
     .btn {
-      margin-top: 30px;
-      padding: 12px 25px;
-      background: #ff9800;
-      color: #fff;
+      background-color: #f7bfb4;
       border: none;
+      padding: 14px 36px;
       border-radius: 30px;
       font-size: 1em;
-      text-decoration: none;
+      color: white;
+      cursor: pointer;
+      margin-top: 30px;
       transition: 0.3s;
     }
 
     .btn:hover {
-      background: #ffa733;
-      transform: scale(1.05);
+      background-color: #f5a49a;
     }
 
     footer {
+      text-align: center;
+      padding: 20px;
+      color: #a8745b;
+      margin-top: auto;
+    }
+
+    /* Цветы по углам */
+    .flower {
       position: absolute;
-      bottom: 15px;
-      font-size: 0.8em;
-      opacity: 0.7;
+      width: 140px;
+      opacity: 0.3;
+      z-index: 0;
+    }
+
+    .top-left {
+      top: 0;
+      left: 0;
+      transform: rotate(-15deg);
+    }
+
+    .top-right {
+      top: 0;
+      right: 0;
+      transform: rotate(15deg);
+    }
+
+    .bottom-left {
+      bottom: 0;
+      left: 0;
+      transform: rotate(10deg);
+    }
+
+    .bottom-right {
+      bottom: 0;
+      right: 0;
+      transform: rotate(-10deg);
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      .flower {
+        width: 80px;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to <span style="color:#ff9800;">Destellia</span></h1>
-  <p>Your digital space of creativity, freedom, and innovation.</p>
-  <a href="#" class="btn">Explore</a>
-  <footer>© 2025 Destellia. All rights reserved.</footer>
+  <!-- Цветы по углам -->
+  <img src="https://cdn.pixabay.com/photo/2016/10/18/21/22/flower-1759705_1280.png" class="flower top-left" alt="">
+  <img src="https://cdn.pixabay.com/photo/2016/10/18/21/22/flower-1759705_1280.png" class="flower top-right" alt="">
+  <img src="https://cdn.pixabay.com/photo/2016/10/18/21/22/flower-1759705_1280.png" class="flower bottom-left" alt="">
+  <img src="https://cdn.pixabay.com/photo/2016/10/18/21/22/flower-1759705_1280.png" class="flower bottom-right" alt="">
+
+  <header>
+    <h1>Destellia</h1>
+    <p>Здесь будет твой текст — ты сможешь потом заменить всё по своему вкусу.</p>
+    <button class="btn">Подробнее</button>
+  </header>
+
+  <footer>© 2025 Destellia</footer>
 </body>
 </html>
-
